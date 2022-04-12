@@ -1,6 +1,6 @@
 alert("欢迎欢迎！")
 function playerName(){
-  var name = prompt("What's your name?");
+  var name = prompt("请输入你的名字。");
   alert("你好！ " + name + ", 欢迎来到看图猜成语小游戏!");
 }
 playerName()
