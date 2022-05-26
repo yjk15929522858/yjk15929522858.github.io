@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My first website. </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+   <body style="background-color:	#444444 ;">
+<audio  id="audio" src="背景音乐.mp3" loop="loop" controls="controls" autoplay="autoplay">
+</audio>
+<script>
+var audio = document.getElementByld("audio");
+audio.play();
+</script>
+  <!--导航栏 -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top ">
+  <div class="container-fluid">
+    <a  class="navbar-brand" href="#" ><img src="img/logo.jpg"  style="width:300px;height:80px" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Watching </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Community </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">More </a>
+        </li>
+      </ul>
+     </div>
+    </div>
+  </nav>
+<!--滚动界面 -->
+  <div id="slides" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#slides" data-slide-to="0" class="active"></li>
+      <li data-target="#slides" data-slide-to="1"></li>
+      <li data-target="#slides" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/101.jpg"class="img-fluid">
+        <div class="carousel-caption ">
+          <h1 class="display-2">The Avengers</h1>
+          <h3 >Welcome to Marvel Universe.</h3>
+  <a href="https://www.bilibili.com/video/BV1si4y1S7wb?spm_id_from=333.337.search-card.all.click"target="_blank"><button type="button" class="btn btn-outline-secondary btn-lg ">WATCH VIDEO</button></a>
+  <a href="https://baike.baidu.com/item/%E5%A4%8D%E4%BB%87%E8%80%85%E8%81%94%E7%9B%9F/17609141?fr=aladdin"target="_blank"><button type="button" class="btn btn-secondary btn-lg">READ MORE</button></a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/102.jpg"class="img-fluid" >
+        <div class="carousel-caption ">
+          <h1 class="display-2">The Avengers</h1>
+          <h3 >Welcome to Marvel Universe.</h3>
+          <a href="https://www.bilibili.com/video/BV1si4y1S7wb?spm_id_from=333.337.search-card.all.click" target="_blank"><button type="button" class="btn btn-outline-secondary btn-lg ">WATCH VIDEO</button></a>
+          <a href="https://baike.baidu.com/item/%E5%A4%8D%E4%BB%87%E8%80%85%E8%81%94%E7%9B%9F/17609141?fr=aladdin"target="_blank"><button type="button" class="btn btn-secondary btn-lg">READ MORE</button></a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/103.jpg" class="img-fluid">
+        <div class="carousel-caption ">
+          <h1 class="display-2">The Avengers</h1>
+          <h3 >Welcome to Marvel Universe.</h3>
+          <a href="https://www.bilibili.com/video/BV1si4y1S7wb?spm_id_from=333.337.search-card.all.click"target="_blank"><button type="button" class="btn btn-outline-secondary btn-lg ">WATCH VIDEO</button></a>
+          <a href="https://baike.baidu.com/item/%E5%A4%8D%E4%BB%87%E8%80%85%E8%81%94%E7%9B%9F/17609141?fr=aladdin"target="_blank"><button type="button" class="btn btn-secondary btn-lg">READ MORE</button></a>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<!--第一段文字 -->
+<div class="container-fluid">
+  <div class="row jumbotron"style="background-color:#444444 ;">
+  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+    <p class="lead">"The Avengers", usually referred to as "reconnection", is an action science fiction film series directed by Jos é weden (parts 1 and 2) and Russell brothers (parts 3 and 4), starring Robert Downey Jr., Chris Evans, Chris Hemsworth and others. The film series mainly tells the story of the emergence of the "Avenger alliance" and the subsequent gathering of superheroes. They showed their magic powers and united as one, and finally defeated the evil forces and ensured the safety of the earth.</p>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+    <a href="https://baijiahao.baidu.com/s?id=1666937938773033438&wfr=spider&for=pc"target="_blank"><button type="button" class="btn btn-outline-info btn-lg">Viewing Sequence</button></a>
+</div>
+</div>
+</div>
+  <hr class="line">
+<!--第二段文字 -->
+<div class="container-fluid">
+  <div class="row text-center">
+    <div class="col-12">
+      <h1 class="display-4">About the Avengers</h1>
+    </div>
+    <div class="col-12">
+      <p class="lead">If you are a big fan of Marvel movies, please review Marvel Universe with me again. If you haven't seen Marvel film, I think you will gradually fall in love with it.</p>
+    </div>
+  </div>
+</div>
+<!--第三段文字 -->
+<div class="container-fluid">
+  <div class="row text center">
+    <div class="col-xs-12 col-sm-6 col-md-3">
+          <img src="img/复仇者联盟1.jpg"class="img-fluid"style="width:500px;height:400px" >
+            <h3>The Avengers</h3>
+            <p>
+
+A sudden powerful force emerged from the cosmic cube and brought the evil god rocky (Tom hidleston). He took the cosmic cube and destroyed the experimental site, which caught the "Divine Shield bureau" unprepared, which has been committed to protecting global security for a long time. Commander "one eyed man" Nick Frey (Samuel L. Jackson) realizes that he must create a "strongest alliance in history" and assemble all kinds of superheroes in order to save the world.
+<br>
+So there are six superheroes - "Iron Man" Tony Stark (Robert Downey Jr.), "Thor" Sol odinson (Chris Hemsworth), "Captain America" Steve Rogers (Chris Evans), "Hulk" Bruce Banner (mark rufaro) The "Avenger alliance" formed by "black widow" Natasha Romanov (Scarlett Johnson) and "eagle eye" Clint Barton (Jeremy Reiner) came into being. They showed their magic powers and united as one, and finally defeated the evil forces from extraterrestrial and protected the safety of the earth.
+</p>
+          </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <img src="img/复仇者联盟2.jpg"class="img-fluid" style="width:500px;height:400px">
+      <h3>Avengers: Age of Ultron</h3>
+      <p>
+
+The battle hardened superheroes developed job burnout. Tony Stark, who had already taken off his armor, invented "aochuang" (James Spade) - an artificial intelligence robot with self-awareness and learning ability, and entrusted the task of commanding the robot corps to aochuang.
+<br>
+To the surprise of the superheroes, the evolving aochuang came to the conclusion that "human beings are the greatest threat on earth", and then began to implement the plan to eliminate human beings. The powerful reformers Maximov, brother and sister "fast silver" Pietro (Aaron Taylor Johnson) and "Scarlet Witch" Wanda (Elizabeth Olsen) have also become altron's helpers and caused trouble everywhere. The Avengers must gather again to solve the crisis created by themselves; Finally, aochuang was completely eliminated, and the Avengers welcomed Falcon (Anthony McKay), illusion (Paul betani), war machine (don Chandler), and crimson witch.
+</p>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <img src="img/复仇者联盟3.jpg"class="img-fluid" style="width:500px;height:400px">
+      <h3>Avengers 3: Infinite War</h3>
+      <p>Mieba (Josh Brolin), the supreme power in the galaxy, takes four Obsidian generals around to collect the whereabouts of infinite gemstones. Once mieba gets six infinite gemstones, one of his snap fingers can completely destroy half of the life of the whole universe.
+<br>
+In order to protect the universe, Tony Stark and Steve Rogers reorganized their respective Avengers and fought with spider man (Tom Hollande), Dr. strange (Benedict Cumberbatch), King (Benedict king), Galaxy guard, panther (Chadwick Bosman) and the kingdom of wakanda at all costs to prevent mieba from collecting unlimited gems; However, mieba finally succeeded in collecting six infinite gemstones and randomly erasing half of the life of the whole universe.</p>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+          <img src="img/复仇者联盟4.jpg"class="img-fluid" style="width:500px;height:400px">
+            <h3>Avengers: Endgam</h3>
+            <p>After the Infinite War, the Avengers finally found mieba with the help of rocket raccoon (Bradley Cooper), Nebula (Karen Gillan) and Captain Marvel (Bree Larson), but mieba destroyed all the infinite gemstones, and Thor killed mieba in a rage.
+<br>
+The universe was devastated by the action to destroy hegemony, but five years later, the ant man (Paul Luther) who returned to the real world from the quantum field brought hope of reversal to the surviving Avengers. No matter what the consequences ahead will be, the surviving Avengers must gather again with the help of all remaining allies to reverse the actions of eliminating hegemony, completely restore the order of the universe, re create hope and restore the vitality of the universe; Finally, Tony Stark died heroically, but the universe was successfully revived; After the battle, Steve Rogers officially withdrew from the Avengers and handed over the position and shield of "Captain America" to the Falcon</p>
+          </div>
+  </div>
+  <hr class="line">
+</div>
+<!--第四段文字加右侧图片 -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6">
+      <h2>Some representative film reviews</h2>
+      <p>"Avengers 2" has the problem that most All-Star films will face, that is, there are too many roles, but the film duration is very short. The director hopes to take care of every star and role and give everyone enough appearance time and performance, but in fact, it is often counterproductive. In the action scene, the film still has some experience and continues the experience of the first film. At the beginning of the film, a special effect long motion lens is used to show the group of multiple superheroes in an all-round way. It is connected by a long lens, which is very smooth and enjoyable. (1905 film online review)</p>
+      <p>"Avengers 3: Infinite War" is the most superhero Marvel film in history. The unprecedented gathering of 23 superheroes excited all the audience. The strongest villain in the history of Marvel film "mieba" has provided an impressive performance for the audience on the big screen with a sense of madness and oppression that subverts the imagination. (Sina entertainment review)</p>
+      <p>In the whole film, the information content of several big plays is full and the rhythm is very fast. Whether it is the massive action scenes, dazzling special effects scenes, or extremely compact plot development, it constantly stimulates the audience's heart, and the whole process of information bombing is full of high energy. The director Russell brothers still focused on the literary drama, and said goodbye to the audience affectionately, even tragically. The film has become an epic classic. (Guangzhou Daily)</p>
+      <br>
+      <button type="button" class="btn btn-outline-info  btn-lg">READ MORE</button>
+    </div>
+    <div class="col-lg-6">
+      <img src="img/photo101.jpg" class="img-fluid" style="width:500px;height:500px" align="right">
+    </div>
+  </div>
+</div>
+
+<!--背景墙 -->
+<hr class="line">
+  <div class="fixed-wrap">
+    <img src="img/104.jpg" class="img-fluid" >
+  </div>
+
+<!--人物介绍 -->
+<div class="container-fluid">
+  <div class="row text-center">
+    <div class="col-12">
+      <h1 class="display-4">Introduction of some superheroes</h1>
+    </div>
+   </div>
+  </div>
+  <!-- 人物card -->
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="img/photo201.jpg" class="img-fluid" style="width:600px;height:400px">
+        <div class="card-body">
+          <h4 class="card-title"style="color:#696969">Captain America</h4>
+          <p class="card-text" style="color:#696969">Captain America is a veteran hero created in the era of World War II and one of the most famous anti fascist fighters. He was originally a thin young Steve Rogers. He underwent super soldier transformation surgery and became the only successful experiment. His physical quality reached the human limit. He has no real super power. Although he uses an indestructible special shield, his biggest weapon is courage, perseverance and patriotism. On the eve of the end of World War II, he fell asleep in the ice sea and was found by modern heroes decades later. The awakened Rogers continues to fight for justice, but the contemporary world is not as clear as it used to be. From time to time, he is regarded as a living fossil behind the times. As one of Marvel's few heroes who are almost moral perfect!</p>
+          <a href="#" class="btn btn-outline-secondary">Learn more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="img/photo202.jpg "class="img-fluid" style="width:600px;height:400px">
+        <div class="card-body">
+          <h4 class="card-title"style="color:#696969">Iron Man</h4>
+          <p class="card-text"style="color:#696969">Iron man is a superhero of Marvel comics. There are many generations of iron man, the most famous of which is Tony Stark. He first appeared in the 39th issue of suspense story (March 1963), which was jointly created by Stan Lee, Larry Lipper, don heck and Jack Kobe. His full name is Anthony Edward 'Tony' stark. He is the CEO of stark industries. In a conspiracy kidnapping, shrapnel penetrated his chest and his life was in danger. In order to save his life, Tony built an arc reactor with the assistance of the kidnapped physicist Ho yinsen, Using the ark reaction furnace as the source of energy operation, he secretly created a set of armor (mark1) to escape after breaking out of the siege, and then participated in the creation of the avenger alliance.
+
+In the marvel movie universe, the famous American actor Robert Downey Jr. plays Tony Stark.</p>
+          <a href="#" class="btn btn-outline-secondary">Learn more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="img/photo203.jpg "class="img-fluid" style="width:600px;height:400px">
+        <div class="card-body">
+          <h4 class="card-title"style="color:#696969">Black widow</h4>
+          <p class="card-text"style="color:#696969">Black widow is a superhero in Marvel comics. Her real name is Natasha Romanov. As an orphan from childhood, he was raised by the former Soviet government. His body was genetically modified by the former Soviet government, which greatly delayed his aging rate and enhanced his immune system and anti fighting ability. Coupled with his years of physical and mental training, he was like a deadly poisonous spider "black widow". He joined the avenger after rebelling against the former Soviet Union.</p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <a href="#" class="btn btn-outline-secondary">Learn more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="img/photo204.jpg "class="img-fluid" style="width:600px;height:400px">
+        <div class="card-body">
+          <h4 class="card-title"style="color:#696969">Thor</h4>
+          <p class="card-text"style="color:#696969">Thor comes from the Nordic mythology in reality. He is one of the most powerful and heroic members in the divine world. At first, he was demoted to the earth because of his arrogance. Later, he gradually became friends with mankind and fought against various evil forces. Although he is a God, he is not omnipotent. He also has to face all kinds of difficulties: mutual incomprehension with secular rules, various differences with Protoss compatriots, and struggle with higher forces in the universe... As an extraordinary and wandering hero, he will continue to call for wind and rain in the world.</p>
+          <a href="#" class="btn btn-outline-secondary">Learn more</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="img/photo205.jpg "class="img-fluid" style="width:600px;height:400px">
+        <div class="card-body">
+          <h4 class="card-title"style="color:#696969">Spider man</h4>
+          <p class="card-text"style="color:#696969">Spider man's full name is Peter Benjamin Parker. He is an ordinary student in the United States. After graduation, he became a reporter for the horn daily. Due to being accidentally bitten by a radioactive infected spider, you have the same super ability, superhuman endurance, reaction, agility and speed as a spider. And invented the spider web launcher, from then on the incarnation of spider man to guard New York.</p>
+<br>
+<br>
+<br>
+          <a href="#" class="btn btn-outline-secondary">Learn more</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="img/photo206.jpg "class="img-fluid" style="width:600px;height:400px">
+        <div class="card-body">
+          <h4 class="card-title"style="color:#696969">Eagle eye</h4>
+          <p class="card-text"style="color:#696969">He was an orphan who grew up in a circus. His real name was Clinton Francis Barton and his nickname was Clint. He studied under swordsman and trick shot. He was gifted and good at bows and arrows. He shot 100 times. When he was a child, he won the title of eagle eye and the world's best sniper. Inspired by iron man on television, he dressed up as a superhero and joined the avenger, Once had a romantic relationship with the black widow.</p>
+          <br>
+          <br>
+          <a href="#" class="btn btn-outline-secondary">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--话题讨论区  输入框 -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6">
+      <h2>Some discussions about the Avengers </h2>
+      <p>How did Thanos die? Was it killed by Thor or by iron man? Because Thanos who was killed by Thor came here and was killed by iron man, did Thor kill mieba?   (Chinese netizen ----- "weirdo")</p>
+      <br>
+      <p>Has that half disappeared? Or is it because mieba shuttled to the present before hitting his finger and was killed? Has half of his previous life disappeared??  (American netizen ------ "amateur magician")</p>
+      <br>
+      <p>There's a question. Didn't the Captain America in the Avengers raise the hammer for the first time because of Thor's face (said by the director of the Avengers in an interview)? Why did someone say today that the United States team was unable to lift it because of its distractions at that time?  (Korean netizen ----- dreamer)</p>
+      <br>
+      <button type="button" class="btn btn-outline-info  btn-lg">READ MORE</button>
+<br>
+<br>
+      <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder=" Something you want to talk about the Avengers" aria-label=" Something you want to talk about the Avengers" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <span class="input-group-text" id="basic-addon2">Publish to discussion area</span>
+  </div>
+</div>
+    </div>
+    <div class="col-lg-6">
+      <img src="img/111.jpg" class="img-fluid" style="width:500px;height:500px" align="right">
+    </div>
+  </div>
+</div>
+<hr class="line">
+<!--联系我们 -->
+<div class="container-fluid">
+  <div class="row text-center">
+    <div class="col-12">
+      <h2>Connect</h2>
+    </div>
+    <div class="col-12 social">
+      <a href="qq.html"><i class="fab fa-qq"></i></a>
+      <a href="微信.html"><i class="fab fa-weixin"></i></a>
+      <a href="微博.html"><i class="fab fa-weibo"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</div>
+<!--页脚 -->
+<footer>
+<div class="container-fluid">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <img src="img/logo.jpg "style="width:300px;height:57px">
+      <hr class="light" >
+      <p>185-43484-881</p>
+      <p>1443174547@qq.com</p>
+      <p>100 Tumbling Street</p>
+      <p>Shaanxi Ankang 725502</p>
+    </div>
+    <div class="col-md-4">
+      <hr class="light">
+      <h5>My hours</h5>
+      <hr class="light">
+      <p>Mondy:8am-4pm</p>
+      <p>saturday:9am-5am</p>
+      <p>sunday:closed</p>
+    </div>
+    <div class="col-md-4">
+      <hr class="light">
+      <h5>Services</h5>
+      <hr class="light">
+      <p>City,state,000000</p>
+      <p>City,state,000000</p>
+      <p>City,state,000000</p>
+    </div>
+    <div class="col-12">
+      <hr class="light">
+      <h5>&copy www.avengers.com</h5>
+    </div>
+  </div>
+  </div>
+</footer>
+<!--背景音乐 -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  </body>
+</html>

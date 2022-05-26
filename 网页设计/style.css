@@ -1,0 +1,61 @@
+audio{
+        display: none;
+    }
+html,body{
+  font-family: 'Poppins',sans-serif;
+  color:#F5F5F5 ;
+}
+.carousel img{
+  width: 100%;
+  height:100%;
+}
+.btn-secondary{
+  background-color: #00DDDD;
+  border: 1px soild #00DDDD;
+}
+
+.btn-secondary:hover{
+  background-color: #008888;
+  border: 1px soild #008888;
+}
+
+.social a{
+  font-size: 4.5rem;
+  text-align: center;
+  margin: 0 50px;
+  text-decoration: none;
+  color: seashell;
+  padding:3rem;
+}
+.fa-qq{
+  color:#009FCC;
+}
+.fa-weixin{
+  color:#66DD00	;
+}
+
+.fa-weibo{
+  color:#dd4b39;
+}
+.fa-github{
+  color:#7A0099 ;
+}
+.fa-whatsapp{
+  color:#bb0000;
+}
+.fa-qq:hover,.fa-weixin:hover,.fa-weibo:hover,.fa-github:hover,.fa-whatsapp:hover{
+  color: #d5d5d5;
+}
+footer{
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+.light{
+  border-top: 1px solid #d5d5d5;
+  width:75%;
+}
+.line{
+  border-top: 1px solid #d5d5d5;
+  width:100%;
+}
